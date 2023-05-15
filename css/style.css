@@ -36,6 +36,9 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #111;
   overflow-x: hidden;
+  background-image: linear-gradient(
+    145deg, pink, yellow
+  );
 }
 
 section {
