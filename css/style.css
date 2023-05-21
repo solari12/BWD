@@ -28,6 +28,7 @@ html::-webkit-scrollbar-track {
   background: #111;
 }
 
+
 html::-webkit-scrollbar-thumb {
   background: #29d9d5;
   border-radius: 5rem;
@@ -36,23 +37,9 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #111;
   overflow-x: hidden;
-  height:100vh;
-  
-}
-/* Tạo một thanh cuộn màu xanh lá cây */
-::-webkit-scrollbar {/*chọn tất cả các thanh cuộn trong trình duyệt Chrome và Safari*/
-  width: 8px;
-  height: 8px;
+  overflow: hidden;
 }
 
-::-webkit-scrollbar-thumb { /*được sử dụng để tùy chỉnh màu sắc của "nút" trên thanh cuộn*/
-  border-radius: 5px;
-  background-color: #29D9D5;
-}
-
-::-webkit-scrollbar-track { /*được sử dụng để tùy chỉnh màu sắc của "đường" trên thanh cuộn*/
-  background-color: #f1f1f1;
-}
 body.active {
   background: #eee;
   overflow-x: hidden;
@@ -800,7 +787,9 @@ section {
   margin-bottom: 1rem;
   padding: 1.2rem 1.4rem;
 }
-
+.footer .box-container .map iframe{
+  width: 78em;
+}
 .credit {
   background: #222;
   text-align: center;
