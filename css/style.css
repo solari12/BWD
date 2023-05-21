@@ -97,7 +97,9 @@ section {
           justify-content: space-between;
   padding: 1.5rem 9%;
 }
-
+.header.active .navbar{
+  background: #DDD;
+}
 .header .navbar a {
   font-size: 1.7rem;
   color: #aaa;
@@ -105,7 +107,7 @@ section {
   margin: 0 1rem;
 }
 
-.header.active .navbar a {
+.header .navbar a {
   font-size: 1.7rem;
   color: #555;
   display: inline-block;
