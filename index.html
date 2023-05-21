@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive travel website design tutorial</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo"> <i class="fas fa-paper-plane"></i>TravelS </a>
+
+    <nav class="navbar">
+        <a data-aos="zoom-in-left" data-aos-delay="300" href="#home">Trang chủ</a>
+        <a data-aos="zoom-in-left" data-aos-delay="450" href="#about">Giới thiệu</a>
+        <a data-aos="zoom-in-left" data-aos-delay="600" href="#destination">Điểm đến</a>
+        <a data-aos="zoom-in-left" data-aos-delay="750" href="#services">Dịch vụ</a>
+        <a data-aos="zoom-in-left" data-aos-delay="900" href="#gallery">Thư viện</a>
+        <a data-aos="zoom-in-left" data-aos-delay="1150" href="#blogs">Câu chuyện</a>
+    </nav>
+
+    <a data-aos="zoom-in-left" data-aos-delay="1300" href="#book-form" class="btn">Đặt ngay</a>
+    <div id="toggle">
+        <i class="indicator">
+        </i>
+    </div>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span data-aos="fade-up" data-aos-delay="150">Bước chân</span>
+        <h3 data-aos="fade-up" data-aos-delay="300">Việt Nam</h3>
+        <p data-aos="fade-up" data-aos-delay="450">Điểm đến của chúng ta không phải là một vùng đất,</p>
+        <p data-aos="fade-up" data-aos-delay="450">nhưng đó là một cách nhìn mới.</p>
+        <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">Đặt ngay</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- booking form section starts  -->
+
+<section class="book-form" id="book-form">
+
+    <form action="">
+        <div data-aos="zoom-in" data-aos-delay="150" class="inputBox">
+            <span>Đi đâu ?</span>
+            <input type="text" placeholder="Tên địa điểm" value="">
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="300" class="inputBox">
+            <span>Khi nào ?</span>
+            <input type="date" value="">
+        </div>
+        <div data-aos="zoom-in" data-aos-delay="450" class="inputBox">
+            <span>Bao nhiêu người ?</span>
+            <input type="number" placeholder="Số lượng khách du lịch" value="">
+        </div>
+        <input data-aos="zoom-in" data-aos-delay="600" type="submit" value="Tìm ngay" class="btn">
+    </form>
+
+</section>
+
+<!-- booking form section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="video-container" data-aos="fade-right" data-aos-delay="300">
+        <video src="img/about-vd1.mp4" muted autoplay loop class="video"></video>
+        <div class="controls">
+            <span class="control-btn" data-src="img/about-vid-1.mp4"></span>
+            <span class="control-btn" data-src="img/about-vid-2.mp4"></span>
+            <span class="control-btn" data-src="img/about-vid-3.mp4"></span>
+        </div>
+    </div>
+
+    <div class="content" data-aos="fade-left" data-aos-delay="600">
+        <span>Tại sao chọn chúng tôi?</span>
+        <h3>Thiên nhiên hùng vĩ đang chờ đợi bạn</h3>
+        <p>Những ngọn núi hùng vĩ, những con sông mênh mông và những cánh đồng bao la đang sẵn sàng để bạn khám phá. Bạn đã sẵn sàng để bước vào một cuộc phiêu lưu khám phá thiên nhiên tuyệt vời này không?</p>
+        <a href="#" class="btn"> Đọc thêm </a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- destination section starts  -->
+
+<section class="destination" id="destination">
+    <div class="heading">
+        <span>Điểm đến</span>
+        <h1>Khám phá những điểm đến của bạn</h1>
+    </div>
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="image">
+                <img src="img/des1.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.8</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Hồ Hoàn Kiếm</h3>
+                <p>Tour Hà Nội 4N2D:Hà Nội - Hạ Long - Yên Tử - Ninh Bình - Bái Đính - Tràng An</p>
+                <!-- <a href="#">read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>8 khách đã đặt trong 24h qua</div>
+                <div class="price">8.000.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="image">
+                <img src="img/des2.jpg"">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.6</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Vịnh Hạ Long</h3>
+                <p>Tour Hạ Long 2N1D: Vịnh Hạ Long - Hạ Long Park - Bãi Cháy</p>
+                <!-- <a href="#">Read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>8 khách đã đặt trong 24h qua</div>
+                <div class="price">1.000.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <div class="image">
+                <img src="img/des3.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.2</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Cát Bà</h3>
+                <p>Tour du lịch Cát Bà 2N: Vịnh Lan Hạ – Đảo Khỉ</p>
+                <!-- <a href="#">read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>8 khách đã đặt trong 24h qua</div>
+                <div class="price">1.560.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <div class="image">
+                <img src="img/des4.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.6</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Cầu Vàng</h3>
+                <p>Tour Đà Nẵng 1N: Bà Nà Hill - Đường lên tiên cảnh</p>
+                <!-- <a href="#">read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>8 khách đã đặt trong 24h qua</div>
+                <div class="price">1.000.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="750">
+            <div class="image">
+                <img src="img/des5.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.6</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Phố cổ Hội An</h3>
+                <p>Tour Đà Nẵng 3N2Đ: Đà Nẵng - Sơn Trà - Cù Lao Chàm - Hội An - Bà Nà</p>
+                <!-- <a href="#">read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>8 khách đã đặt trong 24h qua</div>
+                <div class="price">5.000.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="900">
+            <div class="image">
+                <img src="img/des6.1.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.6</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Núi Bà Đen</h3>
+                <p>Tour Tây Ninh - Viếng Núi Bà</p>
+                <a href="#">read more <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="unit-price">
+                <div>8 khách đã đặt trong 24h qua</div>
+                <div class="price">500.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="1150">
+            <div class="image">
+                <img src="img/des7.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Nhà thờ Đức Bà</h3>
+                <p>Tour miền Bắc 5N4Đ: HCM - Sapa - Lào Cai - Bái Đính - Hạ Long</p>
+                <!-- <a href="#">read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>24 khách đã đặt trong 24h qua</div>
+                <div class="price">8.2500.000đ</div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="1300">
+            <div class="image">
+                <img src="img/des8.jpg" alt="">
+            </div>
+            <div class="evaluate">
+                <ul>
+                    <li><div class="point">9.6</div></li>
+                    <li>Tuyệt vời</li>
+                    <li>|</li>
+                    <li>26 đánh giá</li>
+                </ul>
+            </div>
+            <div class="content">
+                <h3>Đảo Phú Quốc</h3>
+                <p>Phú Quốc 3N2Đ: VinWonders - Vinpearl Safari - Hòn Thơm Nature Park - Cáp treo vượt biển - Công viên nước Aquatopia</p>
+                <!-- <a href="#">read more <i class="fas fa-angle-right"></i></a> -->
+            </div>
+            <div class="unit-price">
+                <div>14 khách đã đặt trong 24h qua</div>
+                <div class="price">6.990.000₫</div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- destination section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <div class="heading">
+        <span>Dịch vụ của chúng tôi</span>
+        <h1>Dịch vụ tuyệt vời</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <i class="fas fa-globe"></i>
+            <h3>Việt Nam</h3>
+            <p>Cùng chúng tôi khám phá đất nước Việt Nam xinh đẹp tuyệt vời</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <i class="fas fa-hiking"></i>
+            <h3>Chuyến phiêu lưu</h3>
+            <p>Khám phá những cuộc phiêu lưu tuyệt vời cùng những thách thức và kỳ diệu</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <i class="fas fa-utensils"></i>
+            <h3>tinh hoa ẩm thực</h3>
+            <p>Trải nghiệm ẩm thực đa dạng, đem lại niềm vui và thỏa mãn khẩu vị của bạn."</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="600">
+            <i class="fas fa-hotel"></i>
+            <h3>Khách sạn tuyệt vời</h3>
+            <p>Khách sạn với mức giá hợp lý, mang đến cho bạn sự thoải mái và tiện nghi</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="750">
+            <i class="fas fa-wallet"></i>
+            <h3>Giá cả phải chăng</h3>
+            <p>Thoải mái trải nghiệm sản phẩm hoặc dịch vụ mà không lo về tài chính."</p>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="900">
+            <i class="fas fa-headset"></i>
+            <h3>Hỗ trợ 24/7 </h3>
+            <p>Đội ngũ hỗ trợ đáp ứng mọi yêu cầu và giúp đỡ bạn mọi lúc mọi nơi.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <div class="heading">
+        <span>Thư viện của chúng tôi</span>
+        <h1>Những kỷ niệm đáng nhớ</h1>
+    </div>
+    
+    <div class="box-container">
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="img/gla-1.jpg" alt="">
+            <span>Điểm đến</span>
+            <h3>Tràng An - Ninh Bình</h3>   
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/gla2.jpg" alt="">
+            <span>Văn hóa</span>
+            <h3>Trên sông Mê Kông</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="img/gla3.jpg" alt="">
+            <span>Điểm đến</span>
+            <h3>Làng Ưóc Lễ - Huế</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="img/gla4.jpg" alt="">
+            <span>Điểm đến</span>
+            <h3>Rừng dừa 7 mẫu</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/gla6.jpg" alt="">
+            <span>Điểm đến</span>
+            <h3>Đường đến chùa Hương</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="img/gla5.jpg" alt="">
+            <span>Văn hóa</span>
+            <h3>Chợ nổi Cái Răng</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <img src="img/gla7.jpeg" alt="">
+            <span>Điểm đến</span>
+            <h3>Phố cổ Hội An</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <img src="img/gla8.jpg" alt="">
+            <span>Ẩm thực</span>
+            <h3>Bữa cơm miền bắc</h3>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <img src="img/gla9.jpg" alt="">
+            <span>Ẩm thực</span>
+            <h3>Bữa cơm miền Nam</h3>
+        </div>
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<!-- <section class="review">
+
+    <div class="content" data-aos="fade-right" data-aos-delay="300">
+        <span>testimonials</span>
+        <h3>good news from our clients</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda laudantium corporis fugiat quae unde perspiciatis similique ab modi enim consequatur aperiam cumque distinctio facilis sit, debitis possimus asperiores non harum.</p>
+    </div>
+
+    <div class="box-container" data-aos="fade-left" data-aos-delay="600">
+
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="user">
+                <img src="images/pic-1.png" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>designer</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="user">
+                <img src="images/pic-2.png" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>designer</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="user">
+                <img src="images/pic-3.png" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>designer</span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, ratione.</p>
+            <div class="user">
+                <img src="images/pic-4.png" alt="">
+                <div class="info">
+                    <h3>john deo</h3>
+                    <span>designer</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <div class="heading">
+        <span>Blog - Bài viết</span>
+        <h1>Những chuyện chưa kể</h1>
+    </div>
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <div class="image">
+                <img src="img/blg1.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="link"> Không muốn về nhà</a>
+                <p>Thực sự đây là chuyến đi đáng nhớ mà tôi muốn đi mãi mãi </p>
+                <div class="icon">
+                    <a href="#"><i class="fas fa-clock"></i> 11st march, 2023</a>
+                    <a href="#"><i class="fas fa-user"></i> by Hai Nguyen</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <div class="image">
+                <img src="img/blg2.jpg" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="link"> Bức tranh Tây Bắc vào cuối thu  </a>
+                <p> Bức tranh Tây Bắc tuyệt đẹp vào cuối thu </p>
+                <div class="icon">
+                    <a href="#"><i class="fas fa-clock"></i> 26th August, 2022</a>
+                    <a href="#"><i class="fas fa-user"></i> by admin</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <div class="image">
+                <img src="img/blg3.webp" alt="">
+            </div>
+            <div class="content">
+                <a href="#" class="link"> Tôi yêu Việt Nam </a>
+                <p> Trải nghiệm tuyệt vời tại Việt Nam !</p>
+                <div class="icon">
+                    <a href="#"><i class="fas fa-clock"></i> 19th may, 2021</a>
+                    <a href="#"><i class="fas fa-user"></i> by Martin Odergaard</a>
+                </div>
+            </div>  
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- banner section starts  -->
+
+<div class="banner">
+    <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+        <span>Bắt đầu cuộc hành trình của chính bạn</span>
+        <h3>Khám phá Việt Nam xinh đẹp</h3>
+        <p>Bạn còn chờ gì nữa? Đặt một chuyến đi được lên kế hoạch chu đáo.
+            Với tất cả các lựa chọn du lịch và phong cách sống độc đáo của bạn, như mọi khi, TravelS sẽ đồng hành cùng bạn.</p>
+        <a href="#book-form" class="btn">Đặt ngay</a>
+    </div>
+</div>
+
+<!-- banner section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> travelS </a>
+            <p>Theo dõi chúng tôi trên</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.tiktok.com/en/" class="fab fa-tiktok"></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>Chuyển đến</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> Trang chủ </a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> Giới thiệu </a>
+            <a href="#destination" class="links"> <i class="fas fa-arrow-right"></i> Điểm đến </a>
+            <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> Dịch vụ </a>
+            <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> Thư viện </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> Câu chuyện </a>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <h3>Thông tin liên hệ</h3>
+            <p> <i class="fas fa-map"></i> 470 Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng     </p>
+            <p> <i class="fas fa-phone"></i> 0123 456 789 </p>
+            <p> <i class="fas fa-envelope"></i> Lam058b@gmail.com </p>
+            <p> <i class="fas fa-clock"></i> 8:00am - 10:00pm </p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <h3>Bản tin</h3>
+            <p>Đăng ký để cập nhật những tin tức mới nhất của chúng tôi</p>
+            <form action="">
+                <input type="email" name="" placeholder="Enter your email" class="email" id="">
+                <input type="submit" value="subscribe" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+    AOS.init({
+        duration: 800,
+        offset:150,
+    });
+
+</script>
+
+</body>
+</html>
