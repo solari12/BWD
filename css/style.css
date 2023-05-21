@@ -28,6 +28,7 @@ html::-webkit-scrollbar-track {
   background: #111;
 }
 
+
 html::-webkit-scrollbar-thumb {
   background: #29d9d5;
   border-radius: 5rem;
@@ -36,7 +37,9 @@ html::-webkit-scrollbar-thumb {
 body {
   background: #111;
   overflow-x: hidden;
+  overflow: hidden;
 }
+
 body.active {
   background: #eee;
   overflow-x: hidden;
@@ -97,9 +100,7 @@ section {
           justify-content: space-between;
   padding: 1.5rem 9%;
 }
-.header.active .navbar{
-  background: #DDD;
-}
+
 .header .navbar a {
   font-size: 1.7rem;
   color: #aaa;
@@ -786,7 +787,9 @@ section {
   margin-bottom: 1rem;
   padding: 1.2rem 1.4rem;
 }
-
+.footer .box-container .map iframe{
+  width: 78em;
+}
 .credit {
   background: #222;
   text-align: center;
@@ -824,7 +827,15 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+  .header.active .navbar{
+    background: #DDD;
+  }
   .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header.active .navbar.active {
+    background: #DDD;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
