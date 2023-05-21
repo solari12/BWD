@@ -97,9 +97,7 @@ section {
           justify-content: space-between;
   padding: 1.5rem 9%;
 }
-.header.active .navbar{
-  background: #DDD;
-}
+
 .header .navbar a {
   font-size: 1.7rem;
   color: #aaa;
@@ -824,7 +822,15 @@ section {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+  .header.active .navbar{
+    background: #DDD;
+  }
   .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header.active .navbar.active {
+    background: #DDD;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
