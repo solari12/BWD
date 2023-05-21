@@ -40,17 +40,17 @@ body {
   
 }
 /* Tạo một thanh cuộn màu xanh lá cây */
-::-webkit-scrollbar {
+::-webkit-scrollbar {/*chọn tất cả các thanh cuộn trong trình duyệt Chrome và Safari*/
   width: 8px;
   height: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb { /*được sử dụng để tùy chỉnh màu sắc của "nút" trên thanh cuộn*/
   border-radius: 5px;
   background-color: #29D9D5;
 }
 
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track { /*được sử dụng để tùy chỉnh màu sắc của "đường" trên thanh cuộn*/
   background-color: #f1f1f1;
 }
 body.active {
