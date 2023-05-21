@@ -69,7 +69,7 @@ section {
   font-size: 1.7rem;
   color: #29d9d5;
   border: 0.2rem solid #29d9d5;
-  border-radius: 5rem;
+  border-radius: 5.1rem;
   cursor: pointer;
   background: none;
 }
@@ -97,7 +97,9 @@ section {
           justify-content: space-between;
   padding: 1.5rem 9%;
 }
-
+.header.active .navbar{
+  background: #DDD;
+}
 .header .navbar a {
   font-size: 1.7rem;
   color: #aaa;
@@ -105,7 +107,7 @@ section {
   margin: 0 1rem;
 }
 
-.header.active .navbar a {
+.header .navbar a {
   font-size: 1.7rem;
   color: #555;
   display: inline-block;
@@ -150,7 +152,7 @@ section {
     to bottom, #bbb, #f0f0f0);
   }
 .header .btn {
-  margin-top: 0;
+  margin-top: 1;
 }
 
 .logo {
