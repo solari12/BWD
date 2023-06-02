@@ -1120,8 +1120,39 @@ input::placeholder {
 .box__content__star span {
   display: block;
   height: 100%;
-  width: 60%;
   background-image: url('../img/sao1.png');
   background-size: cover;
   background-position: left top;
+}
+
+.box__content__star span.star1 {
+  width: 89%;
+}
+
+.box__content__star span.star2 {
+  width: 96%;
+}
+
+.box__content__star span.star3 {
+  width: 92%;
+}
+
+.box__content__star span.star4 {
+  width: 95%;
+}
+
+.box__content__star span.star5 {
+  width: 88%;
+}
+
+.box__content__star span.star6 {
+  width: 82%;
+}
+
+.box__content__star span.star7 {
+  width: 90%;
+}
+
+.box__content__star span.star8 {
+  width: 97%;
 }
