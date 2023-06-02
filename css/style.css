@@ -131,6 +131,9 @@ section {
 .header.active{
   background: #dddddde6;
 }
+.header.active a{
+  color: #000;
+}
 #toggle .indicator{
   position: absolute;
   top:0px;
@@ -201,16 +204,20 @@ section {
 }
 
 .home .content span {
+  text-transform: uppercase;
   font-weight: bolder;
   color: transparent;
   -webkit-text-stroke: 0.1rem #fff;
   font-size: 4vw;
   display: block;
+  font-family: 'Charmonman', cursive;
 }
 
 .home .content h3 {
+  text-transform: uppercase;
   font-size: 6vw;
   color: #fff;
+  font-family: 'Charmonman', cursive;
 }
 
 .home .content p {
@@ -365,13 +372,74 @@ section {
   align-items: center;
 }
 .lightbox .container{
-  width: 60vw;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background: #99999940;
   position: relative;
+  height: 565px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+.lightbox .container .book{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox .container .book .form-field{
+  position: relative;
+  width: 100%;
+}
+.lightbox .container .book .form-input{
+  width: 100%;
+  border-radius: 10px;
+  height: 30px;
+  padding: 10px;
+  background: #99999940;
+  color: #fff;
+  transition: 0.25s ease;
+  border:2px solid #999;
+}
+.form-label{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  padding: 12px;
+  user-select: none;
+  pointer-events: none;
+  font-size: 14px;
+  color: white;
+}
+#datepicker{
+  font-size: 14px;
+  color: white;
+}
+#n{
+  user-select: none;
+}
+.lightbox .container .book .form-input:focus{
+  border-color:#29d9d5;
+}
+.form-input:not(:placeholder-shown) + .form-label,
+.form-input:focus + .form-label{
+  top: -15px;
+  padding: 0 5px;
+  left: 7px;
+  color: #29d9d5;
+  font-size: large;
+}
+
+
+input::placeholder {
+  color: white;
 }
 .lightbox-next{
   position: absolute;
@@ -379,16 +447,47 @@ section {
   transform: translateX(40px);
 }
 .lightbox-prev{
+  position: absolute;
   left: 0;
   transform: translateX(-40px);
+}
+.lightbox-next:active{
+  transform: translateX(50px);
+}
+.lightbox-prev:active{
+  transform: translateX(-50px);
 }
 .lightbox .container .box {
   border-radius: 1rem;
   overflow: hidden;
   background: #222;
   width: 50%;
+  left: 0;
 }
-
+.lightbox .container .book button{
+  border-radius: 5px;
+  width: 90px;
+  height: 30px;
+  background : #f00;
+  color: #fff;
+}
+.lightbox .container .book button:active {
+  animation: btnClick 0.3s;
+}
+.lightbox .container .book .logo i{
+  color: #29d9d5;
+}
+@keyframes btnClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .lightbox .container .box:hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -887,7 +986,12 @@ section {
   padding: 2rem 1rem;
   color: #aaa;
 }
-
+.footer.active .box-container .box a{
+  color: black;
+}
+.footer.active .box-container .box h3{
+  color: black;
+}
 .credit span {
   color: #29d9d5;
 }

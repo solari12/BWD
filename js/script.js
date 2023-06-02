@@ -23,6 +23,7 @@ const book = document.getElementById('book-form');
 const body = document.querySelector('body');
 const toggle = document.getElementById('toggle');
 const about = document.getElementById('about');
+const footer = document.getElementById('footer')
 toggle.onclick = function(){
     toggle.classList.toggle('active');
     header.classList.toggle('active');
@@ -33,6 +34,7 @@ toggle.onclick = function(){
     services.classList.toggle('active');
     gallery.classList.toggle('active');
     blogs.classList.toggle('active');
+    footer.classList.toggle('active');
 }
 
 
@@ -66,6 +68,17 @@ toggle.onclick = function(){
 </div>*/
 
 
+var destinationElement = document.querySelector('.destination');
+var boxContainerElement = destinationElement.querySelector('.box-container');
+var boxElements = boxContainerElement.querySelectorAll('.box');
+var boxContentList = [];
+
+boxElements.forEach(function(boxElement) {
+  var boxContent = boxElement.innerHTML;
+  boxContentList.push(boxContent);
+  console.log(boxContent);
+});
+
 const items = document.querySelectorAll('.destination .box-container .box');
 let lightboxContainer = null;
 let currentIndex = -1;
@@ -77,15 +90,41 @@ items.forEach((item, index) => {
 
 function handleZoomImage(index) {
   currentIndex = index;
-  const currentItem = items[index].outerHTML;
+  const boxContent = boxContentList[index];
 
   const lightbox = document.createElement('div');
   lightbox.classList.add('lightbox');
   lightbox.innerHTML = `
-    <div class="container">
+      <div class="container">
       <i class="fa fa-angle-left lightbox-prev"></i>
-      ${currentItem}
+      <div class="book">
+      <a href="#" class="logo"> <i class="fas fa-paper-plane"></i>TravelS </a>
+      <div class="form-field">
+    <input type="text" class="form-input" placeholder=" ">
+    <label for="name" class="form-label">Họ và tên</label>
+    </div>
+      <div class="form-field">
+    <input type="number" class="form-input" placeholder=" ">
+    <label for="name" class="form-label">Số người</label>
+    </div>
+      <div class="form-field">
+    <input type="text" class="form-input" placeholder=" ">
+    <label for="name" class="form-label">Số điện thoại</label>
+    </div>
+    <div class="form-field" >
+    <input type="date" class="form-input" id="n">
+    </div>
+    <div class="form-field">
+    <input type="email" class="form-input" placeholder=" ">
+    <label for="name" class="form-label">Email</label>
+    </div>
+    <button>Book now</button>
+</div>
+      <div class="box" data-aos="fade" data-aos-delay="150">
+      ${boxContent}
+      </div>
       <i class="fa fa-angle-right lightbox-next"></i>
+      
     </div>
   `;
 
@@ -113,7 +152,4 @@ document.body.addEventListener("click", function (e) {
     handleZoomImage(currentIndex);
   }
 });
-
-
-
 
