@@ -439,8 +439,9 @@ section {
 
 
 input::placeholder {
-  color: white;
+  color: rgb(134, 134, 134);
 }
+
 .lightbox-next{
   position: absolute;
   right: 0;

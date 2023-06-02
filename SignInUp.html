@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In & Sign Up</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="/css/SignInUp.css">
+
+    <!-- js link -->
+    <script src="/js/SignInUp.js" defer></script>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title"> Đăng nhập </h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Tên đăng nhập">
+                    </div>
+
+                    <div class="input-field" id="passField">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Mật khẩu">
+                    </div>
+
+                    <div class="input-field" id="repassField">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Nhập lại mật khẩu">
+                    </div>
+
+                    <div class="input-field" id="emailField">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <p id="findPass"> Bạn quên mật khẩu ? <a href="#"> Tìm lại mật khẩu</a></p>
+
+                </div>
+
+                <br>
+                
+                <div class="btn-field">
+                    <button type="button" id="btnSignIn">Đăng nhập </button>
+                    <button type="button" id="btnSignUp" class="disable">Đăng ký </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
