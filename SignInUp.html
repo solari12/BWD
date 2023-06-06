@@ -25,12 +25,12 @@
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Tên đăng nhập">
+                        <input type="text" placeholder="Tên đăng nhập" required maxlength="15" minlength="6">
                     </div>
 
                     <div class="input-field" id="passField">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" placeholder="Mật khẩu">
+                        <input type="password" placeholder="Mật khẩu"  required maxlength="18" minlength="6">
                     </div>
 
                     <div class="input-field" id="repassField">
@@ -50,7 +50,7 @@
                 <br>
                 
                 <div class="btn-field">
-                    <button type="button" id="btnSignIn">Đăng nhập </button>
+                    <button type="submit" id="btnSignIn"><a href="index.html" > Đăng nhập </a></button>
                     <button type="button" id="btnSignUp" class="disable">Đăng ký </button>
                 </div>
             </form>

@@ -103,21 +103,26 @@ function handleZoomImage(index) {
     <input type="text" class="form-input" placeholder=" ">
     <label for="name" class="form-label">Họ và tên</label>
     </div>
+
       <div class="form-field">
     <input type="number" class="form-input" placeholder=" ">
     <label for="name" class="form-label">Số người</label>
     </div>
+    
       <div class="form-field">
     <input type="text" class="form-input" placeholder=" ">
     <label for="name" class="form-label">Số điện thoại</label>
     </div>
-    <div class="form-field" >
-    <input type="date" class="form-input" id="n">
-    </div>
+    
     <div class="form-field">
     <input type="email" class="form-input" placeholder=" ">
     <label for="name" class="form-label">Email</label>
     </div>
+
+    <div class="form-field" >
+    <input type="date" class="form-input" id="n">
+    </div>
+
     <button>Book now</button>
 </div>
       <div class="box" data-aos="fade" data-aos-delay="150">
