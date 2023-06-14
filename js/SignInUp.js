@@ -6,10 +6,12 @@ let emailField = document.getElementById("emailField");
 let findPass = document.getElementById("findPass");
 let title = document.getElementById("title");
 
+// Ẩn trường "Repassword" và "Email" khi bắt đầu vào trang web
 repassField.style.maxHeight = "0";
 emailField.style.maxHeight = "0";
 
 btnSignIn.onclick = function(){
+    // Hiển thị từ từ trường "Repassword" và "Email"
     repassField.style.maxHeight = "0";
     emailField.style.maxHeight = "0";
     findPass.style.display = "block";
@@ -20,6 +22,7 @@ btnSignIn.onclick = function(){
 }
 
 btnSignUp.onclick = function(){
+    // Hiển thị từ từ trường "Repassword" và "Email"
     repassField.style.maxHeight = "60px";
     emailField.style.maxHeight = "60px";
     findPass.style.display = "none";

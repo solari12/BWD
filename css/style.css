@@ -87,7 +87,7 @@ section {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #222222cc;
+  background: rgb(43, 124, 153);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

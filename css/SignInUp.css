@@ -113,3 +113,9 @@ form p a{
     color: inherit;
 
 }
+
+#repassField, #emailField {
+    max-height: 0;
+    overflow: hidden;
+}
+  
